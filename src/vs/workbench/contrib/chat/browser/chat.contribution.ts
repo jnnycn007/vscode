@@ -791,10 +791,10 @@ configurationRegistry.registerConfiguration({
 				mode: 'auto'
 			}
 		},
-		'chat.signInWithAlternateScopes': { // TODO@bpasero remove me eventually
+		[ChatConfiguration.RestoreLastPanelSession]: { // TODO@bpasero review this setting later
 			type: 'boolean',
-			description: nls.localize('chat.signInWithAlternateScopes', "Controls whether sign-in with alternate scopes is used."),
-			default: false,
+			description: nls.localize('chat.restoreLastPanelSession', "Controls whether the last session is restored in panel after restart."),
+			default: true,
 			tags: ['experimental'],
 			experiment: {
 				mode: 'auto'
